@@ -13,14 +13,14 @@
         <!-- Start of the navigation bar -->
         <nav class="nav-bar">
             <span class="link-wrapper" id="home-tab"><a class="navigationLinks home" id="home" href="#home-section">Home</a></span>
-            <span class="link-wrapper" id="education-tab"><a class="navigationLinks education" id="education" href="#school-section">Education</a></span>
-            <span class="link-wrapper" id="experience-tab"><a class="navigationLinks experience" id="experience" href="#experience-section">Experience</a></span>
-            <span class="link-wrapper" id="projects-tab"><a class="navigationLinks projects" id="projects" href="#projects-section">Projects</a></span>
-            <span class="link-wrapper" id="awards-tab"><a class="navigationLinks awards" id="awards" href="#awards-section">Awards</a></span>
-            <span class="link-wrapper" id="contact-tab"><a class="navigationLinks contact" id="contact" href="#contact-section">Contact</a></span>
+            <span class="link-wrapper"><a class="navigationLinks education" id="education" href="#school-section">Education</a></span>
+            <span class="link-wrapper"><a class="navigationLinks experience" id="experience" href="#experience-section">Experience</a></span>
+            <span class="link-wrapper"><a class="navigationLinks projects" id="projects" href="#projects-section">Projects</a></span>
+            <span class="link-wrapper"><a class="navigationLinks awards" id="awards" href="#awards-section">Awards</a></span>
+            <span class="link-wrapper"><a class="navigationLinks contact" id="contact" href="#contact-section">Contact</a></span>
         </nav>
         <!-- Start of the main content -->
-        <section class=index-container id="home-section">
+        <div class=index-container id="home-section">
             <h1 id="welcome"> Welcome to Isaac Arli's Website</h1>
             <img class="profile" src="images/Isaac.jpg" alt="Isaac profile picture">
             <div class="profile-shadow">`</div>
@@ -28,10 +28,9 @@
                 <img src="images/arrow.png" alt="curved arrow" class="arrow">
                 <div class="click-here-text">Click Here</div>
             </div>
-        </section>
+        </div>
 
-        <!-- Projects -->
-        <section class=school-container id="education-section">
+        <section class=school-container id="school-section">
             <!-- Start of a full Education description with title and image -->
             <div class="school uq">
                 <img src="images/UQ logo.jpg" alt="UQ logo" class="logo">
@@ -74,7 +73,6 @@
             </div>
         </section>
 
-        <!-- Projects section -->
         <section class="experience-container" id="experience-section">
             <!-- Start of a circle -->
             <article class="experience-circle china-study-tour">
@@ -98,8 +96,7 @@
                 <p>Working as a Retail Sales Consultate to sell and Promote Sunglasses to everyday customers</p>
             </article>
         <!-- </section> -->
-        
-        <!-- Projects Section -->
+
         <section class=project-container id="projects-section">
             <!-- Start of a project-square -->
             <div class="project-square">
@@ -127,7 +124,6 @@
             </div>
         </section>
 
-        <!-- Awards Container -->
         <section class="awards-container" id="awards-section">
             <!-- Start of the first row -->
             <div class="row">
@@ -175,7 +171,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section class=contact-container id="contact-section">
             <h1 class="contact-message">Let's Get Connected!</h1>
             <!-- Start of the form -->
@@ -185,14 +180,14 @@
                     <textarea name="" id="fmessage" placeholder="Ask me something!"></textarea>
                     <input id="submitButton" type="submit" class="button"></input>
                     <!-- Start of my links section -->
-                    <div class="my-links-section">
+                    <section class="my-links-section">
                         <h2 class="my-link-title">My Links</h2>
                             <div class="social-link-container">
                                 <a href="https://www.linkedin.com/in/isaac-arli/" target="_blank"><img src="images/linkedin white.png" alt="" class="social-logo"></a>
                                 <a href="https://github.com/MiniSoda17" target="_blank"><img src="images/github logo.png" alt="" class="social-logo"></a>
                                 <a href="https://www.instagram.com/minisoda17/" target="_blank"><img src="images/instagram white.png" alt="" class="social-logo"></a>
                             </div>
-                    </div>
+                    </section>
                     <!-- End of my links section -->
             </form> 
             <!-- End of the form -->

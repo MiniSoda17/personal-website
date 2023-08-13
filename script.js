@@ -1,44 +1,18 @@
 // Finds what web-page the user is on
-// let windowPathName = window.location.pathname;
-// let windowName = windowPathName;
-// if (windowName == '/index.html') {
-//     windowName = '/home.html';
-// }
+let windowPathName = window.location.pathname;
+let windowName = windowPathName;
+if (windowName == '/index.html') {
+    windowName = '/home.html';
+}
 
 /**
  * Changes the navbar to correspond with the webpage the user is on
 */
-// function navBarSelector() {
-//     windowName = windowName.replace('/','').replace('.html','');
-//     document.getElementById(windowName).style.color = "White";
-//     document.getElementById(windowName + '-tab').style.backgroundColor = "Black";
-// }
-  
-// Helper function to check if an element is currently in the viewport
-function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+function navBarSelector() {
+    windowName = windowName.replace('/','').replace('.html','');
+    document.getElementById(windowName).style.color = "White";
+    document.getElementById(windowName + '-tab').style.backgroundColor = "Black";
 }
-
-// Function to update the active navigation link
-function updateActiveNavLink() {
-    var sections = document.querySelectorAll("section");
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-        var sectionId = section.getAttribute("id");
-        sectionId = sectionId.replace('section', 'tab');
-        var tab = document.getElementById(sectionId);
-        console.log(isElementInViewport(document.getElementById(section)));
-    }
-}
-
-
-window.addEventListener("scroll", updateActiveNavLink);
 
 /**
  * A function that allows for videos to run over a simple mouse hover
@@ -207,7 +181,5 @@ function renderPage() {
 }
 
 // Runs everything
-// navBarSelector();
-addHoverVideoFnc();
-addValidation();
-addBiggerCircleFnc();
+navBarSelector();
+renderPage();

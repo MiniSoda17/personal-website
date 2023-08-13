@@ -13,11 +13,6 @@ body {
     background-size: cover;
 }
 
-.nav-bar a.active {
-    color: white;
-    background-color: black;
-}
-
 .wrapper {
     width: 100%;
 }
@@ -118,11 +113,10 @@ body {
 }
 
 .profile {
+    border-radius: 50%;
     margin-top: 60px;
     margin-bottom: 50px;
     width: 300px;
-    border-radius: 50%;
-    /* animation: rotate 1s infinite alternate; */
 }
 
 .profile-shadow {
@@ -131,7 +125,6 @@ body {
     width:200px;
     background-color: rgba(27, 27, 27);
     border-radius: 50%;
-    /* animation: shadow-rotate 1s infinite alternate; */
 }
 
 @keyframes rotate {
@@ -212,7 +205,7 @@ body {
     animation-fill-mode: backwards;
 }
 
-/* @keyframes uq-transition-in {
+@keyframes uq-transition-in {
     from {
         opacity: 0;
         transform: translateY(100px);
@@ -220,7 +213,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
 .title {
     text-align: left;
@@ -243,9 +236,6 @@ body {
     margin: auto;
     margin-top: 25px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
 }
 
 .experience-circle {
@@ -257,7 +247,7 @@ body {
     /* position: absolute; */
 }
 
-/* .china-study-tour {
+.china-study-tour {
     animation: move 20s infinite linear;
 }
 
@@ -267,7 +257,7 @@ body {
 
 .google-step-intern {
     animation: google-move 10s infinite linear
-} */
+}
 
 @keyframes move {
     from {
@@ -343,7 +333,7 @@ body {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
+    width: 500px;
 }
 
 .award-logo {
