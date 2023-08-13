@@ -1,11 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
 }
 
 body {
@@ -28,7 +24,7 @@ body {
     text-align: center;
     width: 100%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .nav-bar {
@@ -38,13 +34,7 @@ body {
     margin: auto;
     border: 2px solid #0d0d0d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: white;
     border-left: none;
-    position: fixed;
-    top: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
 }
 
 .diagonalLine {
@@ -116,6 +106,7 @@ body {
     border-radius: 50%;
     margin-top: 60px;
     margin-bottom: 50px;
+    animation: rotate 1s infinite alternate;
     width: 300px;
 }
 
@@ -125,6 +116,7 @@ body {
     width:200px;
     background-color: rgba(27, 27, 27);
     border-radius: 50%;
+    animation: shadow-rotate 1s infinite alternate;
 }
 
 @keyframes rotate {
@@ -244,7 +236,7 @@ body {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .china-study-tour {
@@ -331,8 +323,7 @@ body {
 .awards-container {
     text-align: center;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
     width: 500px;
 }
 
@@ -408,6 +399,7 @@ a {
 
 #fmessage:focus {
     outline: solid 3px RGB(170, 255, 0);
+    
 }
 
 #fmessage::placeholder {
@@ -431,9 +423,8 @@ a {
 }
 
 .contact-container {
-    margin-top: 50px;    
+    margin-top: 20px;    
     max-width: 60%;
-    padding-top: 20px;
     text-align: center;
     margin: auto;
     display: flex;

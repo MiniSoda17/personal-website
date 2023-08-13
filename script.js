@@ -10,7 +10,7 @@ if (windowName == '/index.html') {
 */
 function navBarSelector() {
     windowName = windowName.replace('/','').replace('.html','');
-    document.getElementById(windowName).style.color = "White";
+    document.getElementById(windowName).style.color = "White";;
     document.getElementById(windowName + '-tab').style.backgroundColor = "Black";
 }
 
